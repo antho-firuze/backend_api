@@ -16,7 +16,7 @@
 use Webman\Route;
 
 Route::any('/', function () {
-    return json(["message" => "Welcome to Amoora Travel API !"]);
+    return json(["message" => "Welcome to My API !"]);
 });
 
 Route::group('/api/v1/auth', function () {
@@ -57,8 +57,6 @@ Route::group('/api/v1/broadcast', function () {
     Route::post('/start', [app\api\controller\Broadcast_v1::class, 'start']);
     Route::post('/stop', [app\api\controller\Broadcast_v1::class, 'stop']);
     Route::post('/presenter_heartbeat', [app\api\controller\Broadcast_v1::class, 'presenter_heartbeat']);
-    // Route::post('/online_host', [app\api\controller\Broadcast_v1::class, 'online_host']);
-    // Route::post('/online_audience', [app\api\controller\Broadcast_v1::class, 'online_audience']);
     Route::post('/join_channel', [app\api\controller\Broadcast_v1::class, 'join_channel']);
     Route::post('/leave_channel', [app\api\controller\Broadcast_v1::class, 'leave_channel']);
     Route::post('/audience_heartbeat', [app\api\controller\Broadcast_v1::class, 'audience_heartbeat']);

@@ -1,4 +1,4 @@
-FROM php:8.3-alpine
+FROM php:8.3-cli-alpine
 
 ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
@@ -43,6 +43,6 @@ WORKDIR /app
 COPY . .
 RUN composer install
 
-EXPOSE 8787 8686 8585 3131 8888
+EXPOSE 8888 8787 8686 8585 3131
 
 CMD ["php", "start.php", "start"]

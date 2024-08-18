@@ -1,59 +1,27 @@
-<div style="padding:18px;max-width: 1024px;margin:0 auto;background-color:#fff;color:#333">
-<h1>webman</h1>
+# backend_api
 
-基于<a href="https://www.workerman.net" target="__blank">workerman</a>开发的超高性能PHP框架
+Using Workerman/Webman, a high-performance PHP Application Container.
 
+## Note
 
-<h1>学习</h1>
+This backend only use pure PHP which has been enhanced. And does not need webserver (nginx, apache etc.) again.
 
-<ul>
-  <li>
-    <a href="https://www.workerman.net/webman" target="__blank">主页 / Home page</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/doc/webman" target="__blank">文档 / Document</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/doc/webman/install.html" target="__blank">安装 / Install</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/questions" target="__blank">问答 / Questions</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/apps" target="__blank">市场 / Apps</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/sponsor" target="__blank">赞助 / Sponsors</a>
-  </li>
-  <li>
-    <a href="https://www.workerman.net/doc/webman/thanks.html" target="__blank">致谢 / Thanks</a>
-  </li>
-</ul>
+This PHP support for asyncronous process, multi-process, Epool and Non-blocking IO. And also can maintain tens of thousands of concurrent connections.
 
-<div style="float:left;padding-bottom:30px;">
+Because it is resident in memory, thus it has ultra-high performance. Same as golang and event better for speed.
 
-  <h1>赞助商</h1>
+It also support multi communication protocols like TCP, UDP, UNIXSOCKET, long connection, SSE, Websocket, HTTP and HTTPS, WS and WSS, MQTT and other various custom protocols.
 
-  <h4>特别赞助</h4>
-  <a href="https://www.crmeb.com/?form=workerman" target="__blank">
-    <img src="https://www.workerman.net/img/sponsors/6429/20230719111500.svg" width="200">
-  </a>
+Reference: 
+https://www.dbestech.com/tutorials/php-websocket-workerman
 
-  <h4>铂金赞助</h4>
-  <a href="https://www.fadetask.com/?from=workerman" target="__blank"><img src="https://www.workerman.net/img/sponsors/1/20230719084316.png" width="200"></a>
-  <a href="https://www.yilianyun.net/?from=workerman" target="__blank" style="margin-left:20px;"><img src="https://www.workerman.net/img/sponsors/6218/20230720114049.png" width="200"></a>
+## Setup
 
-  <h4>金牌赞助</h4>
+- `git clone https://github.com/antho-firuze/backend_api.git`
+- `cd backend_api`
+- `docker-compose up -d` for the first using `docker-compose up -d --build`
+- `docker-compose down` <== for stop 
 
+## For more info
 
-</div>
-
-
-<div style="clear: both">
-<h1>LICENSE</h1>
-The webman is open-sourced software licensed under the MIT.
-</div>
-
-</div>
-
-
+Please contact me antho.firuze@gmail.com
